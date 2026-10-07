@@ -1,0 +1,12 @@
+# Lesson 11: a Yosys script that does by hand what `synth` does in one command.
+# run with:  yosys -s synth.ys
+read_verilog -sv popcount_tree.sv
+hierarchy -top popcount_tree
+proc            # turn always blocks into multiplexers and flip-flops
+opt             # remove logic that does nothing
+techmap         # replace words-wide operators with single-bit gates
+opt
+abc             # optimize and map to a small library of basic gates
+opt_clean
+stat            # count the cells
+ltp -noff       # longest path, counted in cells, ignoring flip-flops

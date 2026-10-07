@@ -1,0 +1,10 @@
+# simulation and synthesis outputs
+*.out
+*.vcd
+*.fst
+*.stat
+*.ltp
+sim_build/
+results.xml
+__pycache__/
+runs/

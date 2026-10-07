@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RTL 101 &middot; Stone Arch Silicon</title>
+<meta name="description" content="RTL 101: a Stone Arch Silicon training track on digital design with Verilog and SystemVerilog using open-source tools.">
+<meta name="theme-color" content="#100A0C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%237A0019'/%3E%3Crect x='12' y='5' width='8' height='7' rx='1.5' fill='%23FFCC33'/%3E%3Cpath d='M3 16h26M5 27v-6a3.5 3.5 0 0 1 7 0v6M12 27v-6a3.5 3.5 0 0 1 7 0v6M19 27v-6a3.5 3.5 0 0 1 7 0v6' stroke='%23FFCC33' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Karla:wght@400;500;600;700&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="row">
+    <a class="brand" id="nav-home" href="#">
+      <svg class="chip" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+        <rect class="die" x="10" y="4" width="12" height="10" rx="2"/>
+        <rect class="core" x="14" y="7" width="4" height="4" rx="1"/>
+        <path class="pins" d="M13 14v3M16 14v3M19 14v3"/>
+        <path class="deck" d="M2 17h28"/>
+        <path class="arch" d="M5 29v-7a3.5 3.5 0 0 1 7 0v7M12 29v-7a3.5 3.5 0 0 1 7 0v7M19 29v-7a3.5 3.5 0 0 1 7 0v7"/>
+      </svg>
+      <span>
+        <span class="wm">STONE ARCH SILICON</span>
+        <span class="sub" id="brand-sub">RTL 101</span>
+      </span>
+    </a>
+    <nav class="links">
+      <a id="nav-main" href="#">Club</a>
+      <a id="nav-repo" href="#" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+  <div class="scrollbar"><span id="progress"></span></div>
+</header>
+
+<div class="toolbar">
+  <button id="drawer-btn" class="tb-btn" type="button">&#9776; <span class="unit-word">Lessons</span></button>
+  <span class="tb-title" id="tb-title">Loading&hellip;</span>
+</div>
+
+<div class="backdrop" id="backdrop"></div>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="track-card">
+      <span class="track-title">RTL 101</span>
+      <span class="track-tagline">Digital design with Verilog and SystemVerilog, simulated and synthesized with open tools.</span>
+    </div>
+    <h3 class="unit-word">Lessons</h3>
+    <nav id="page-nav">
+      <div class="sk" style="width:82%"></div>
+      <div class="sk" style="width:64%"></div>
+      <div class="sk" style="width:74%"></div>
+    </nav>
+    <div class="tracks">
+      <h3>Tracks</h3>
+      <nav id="track-nav"></nav>
+    </div>
+    <p class="side-note">UMN &middot; Twin Cities<br>umnasicgroup@gmail.com</p>
+  </aside>
+
+  <main>
+    <div class="doc-meta" id="doc-meta" style="display:none"></div>
+    <article class="md" id="content">
+      <div class="sk" style="width:55%;height:30px"></div>
+      <div class="sk" style="width:95%"></div>
+      <div class="sk" style="width:88%"></div>
+      <div class="sk" style="width:92%"></div>
+      <div class="sk" style="width:40%"></div>
+    </article>
+    <nav class="pager" id="pager"></nav>
+  </main>
+
+  <aside class="toc" id="toc">
+    <h3>On this page</h3>
+    <nav id="toc-nav"></nav>
+  </aside>
+</div>
+
+<footer>
+  <div class="row">
+    <span class="wm">STONE ARCH SILICON</span>
+    <span class="tag">// tape-out club at the university of minnesota</span>
+    <a id="f-repo" href="#" target="_blank" rel="noopener">Write a lesson on GitHub &nearr;</a>
+  </div>
+</footer>
+
+<noscript><div style="max-width:700px;margin:30px auto;padding:0 24px;font-family:monospace;color:#D9CBCE">These lessons are rendered from markdown in the browser, so JavaScript has to be on. You can also read them directly in the GitHub repo, in the Pages folder.</div></noscript>
+
+<script src="app.js"></script>
+</body>
+</html>
